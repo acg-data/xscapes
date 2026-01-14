@@ -12,136 +12,132 @@
                 theme: {
                     extend: {
                         colors: {
-                            apple: { 50: '#F5F5F7', 500: '#6E6E73', 600: '#48484A', 900: '#1C1C1E' },
-                            blue: { 500: '#0EA5E9', 600: '#0284C7' },
+                            earth: { 950: "#1c1917", 900: "#292524", 800: "#44403c", 600: "#78716c" },
+                            stone: { 100: "#f5f5f4", 50: "#fafaf9" },
+                            sage: { 600: "#558b6e", 500: "#6b8f71" },
                         },
                         fontFamily: {
-                            sans: ["Inter", "-apple-system", "sans-serif"],
-                            display: ["SF Pro Display", "-apple-system", "sans-serif"],
+                            sans: ["Inter", "system-ui", "sans-serif"],
+                            display: ["Playfair Display", "Georgia", "serif"],
                         },
-                        boxShadow: { glass: '0 8px 32px rgba(0,0,0,0.08)' }
                     },
                 },
             };
         </script>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=SF+Pro+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
         <script src="https://unpkg.com/lucide@latest"></script>
         <style>
-            body { font-family: "Inter", -apple-system, sans-serif; background: linear-gradient(135deg, #F5F5F7 0%, #E8E8ED 100%); }
-            .font-display { font-family: "SF Pro Display", -apple-system, sans-serif; }
-            .glass-card { background: rgba(255,255,255,0.72); backdrop-filter: blur(24px); border: 1px solid rgba(255,255,255,0.6); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+            body { font-family: "Inter", sans-serif; }
+            .font-display { font-family: "Playfair Display", Georgia, serif; }
         </style>
     </head>
-    <body class="text-apple-900 antialiased">
-        <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-apple-200">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <body class="bg-stone-50 text-stone-900 antialiased">
+        <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16 items-center">
-                    <a href="/" class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-                            <i data-lucide="trees" class="w-5 h-5 text-white"></i>
+                    <a href="/" class="flex items-center gap-2">
+                        <div class="w-10 h-10 bg-earth-900 rounded-lg flex items-center justify-center">
+                            <i data-lucide="trees" class="w-6 h-6 text-white"></i>
                         </div>
-                        <span class="font-display text-xl font-semibold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">xScapes</span>
+                        <span class="font-display text-2xl font-bold text-earth-900">xScapes</span>
                     </a>
-                    <div class="hidden md:flex items-center gap-4">
-                        <a href="/#services" class="text-sm font-medium text-apple-600 hover:text-blue-600">Services</a>
-                        <a href="/#portfolio" class="text-sm font-medium text-blue-600">Portfolio</a>
-                        <a href="/materials.html" class="text-sm font-medium text-apple-600 hover:text-blue-600">Materials</a>
-                        <a href="/about.html" class="text-sm font-medium text-apple-600 hover:text-blue-600">About</a>
-                        <a href="/#contact" class="px-5 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-semibold rounded-xl shadow-lg">Get Quote</a>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="/#services" class="text-sm font-semibold text-stone-600 hover:text-sage-600">Services</a>
+                        <a href="/#portfolio" class="text-sm font-semibold text-stone-600 hover:text-sage-600">Portfolio</a>
+                        <a href="/materials.html" class="text-sm font-semibold text-stone-600 hover:text-sage-600">Materials</a>
+                        <a href="/about.html" class="text-sm font-semibold text-stone-600 hover:text-sage-600">About</a>
+                        <a href="/#contact" class="bg-copper-500 hover:bg-copper-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold">Get Quote</a>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <section class="py-16 bg-gradient-to-br from-blue-500 via-blue-600 to-cyan-500 text-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-blue-100 font-semibold text-sm uppercase tracking-wide mb-2">Our Work</p>
-                <h1 class="font-display text-4xl md:text-5xl font-semibold mb-4">Featured Projects</h1>
-                <p class="text-xl text-blue-100 max-w-2xl">Stunning outdoor transformations across Northern Virginia.</p>
+        <section class="bg-earth-900 text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-sage-400 font-semibold text-sm uppercase tracking-wide mb-2">Our Work</p>
+                <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Featured Projects</h1>
+                <p class="text-xl text-stone-200 max-w-2xl">Explore our portfolio of stunning outdoor transformations across Northern Virginia.</p>
             </div>
         </section>
 
         <section class="py-16 bg-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600&auto=format&fit=crop" alt="Modern patio" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Modern Patio & Outdoor Kitchen</h3>
-                            <p class="text-sm text-apple-500">Fairfax, VA</p>
-                        </div>
-                    </div>
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop" alt="Composite deck" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Multi-Level Composite Deck</h3>
-                            <p class="text-sm text-apple-500">Arlington, VA</p>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=600&auto=format&fit=crop" alt="Modern patio" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Modern Patio & Outdoor Kitchen</h3>
+                            <p class="text-stone-300 text-sm">Fairfax, VA</p>
                         </div>
                     </div>
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop" alt="Hardscaping" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Natural Stone Retaining Walls</h3>
-                            <p class="text-sm text-apple-500">Alexandria, VA</p>
-                        </div>
-                    </div>
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=600&auto=format&fit=crop" alt="Outdoor living" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Complete Backyard Transformation</h3>
-                            <p class="text-sm text-apple-500">McLean, VA</p>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=600&auto=format&fit=crop" alt="Composite deck" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Multi-Level Composite Deck</h3>
+                            <p class="text-stone-300 text-sm">Arlington, VA</p>
                         </div>
                     </div>
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600&auto=format&fit=crop" alt="Paver patio" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
-                        </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Paver Patio with Fire Pit</h3>
-                            <p class="text-sm text-apple-500">Vienna, VA</p>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop" alt="Hardscaping" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Natural Stone Retaining Walls</h3>
+                            <p class="text-stone-300 text-sm">Alexandria, VA</p>
                         </div>
                     </div>
-                    <div class="glass-card rounded-2xl overflow-hidden group">
-                        <div class="relative">
-                            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe1?q=80&w=600&auto=format&fit=crop" alt="Garden design" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" />
-                            <div class="absolute top-4 left-4 px-2 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg">Featured</div>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=600&auto=format&fit=crop" alt="Outdoor living" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Complete Backyard Transformation</h3>
+                            <p class="text-stone-300 text-sm">McLean, VA</p>
                         </div>
-                        <div class="p-5">
-                            <h3 class="font-display text-lg font-semibold text-apple-900 mb-1">Garden & Walkway Design</h3>
-                            <p class="text-sm text-apple-500">Reston, VA</p>
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=600&auto=format&fit=crop" alt="Paver patio" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Paver Patio with Fire Pit</h3>
+                            <p class="text-stone-300 text-sm">Vienna, VA</p>
+                        </div>
+                    </div>
+                    <div class="group relative rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfe1?q=80&w=600&auto=format&fit=crop" alt="Garden design" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-earth-900 via-earth-900/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-sage-400 text-xs font-semibold uppercase tracking-wide mb-1">Featured Project</p>
+                            <h3 class="font-display text-xl font-bold text-white mb-1">Garden & Walkway Design</h3>
+                            <p class="text-stone-300 text-sm">Reston, VA</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-gradient-to-r from-blue-500 to-blue-600 text-white">
+        <section class="py-16 bg-stone-100">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-display text-3xl font-semibold mb-4">Inspired by Our Work?</h2>
-                <p class="text-blue-100 mb-8">Let's discuss your project.</p>
-                <a href="/#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-blue-600 font-semibold rounded-xl hover:bg-blue-50 transition-all">
+                <h2 class="font-display text-3xl font-bold text-earth-900 mb-4">Inspired by Our Work?</h2>
+                <p class="text-stone-600 text-lg mb-8">Let's discuss your project and create something beautiful together.</p>
+                <a href="/#contact" class="inline-flex items-center gap-2 bg-copper-500 hover:bg-copper-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors">
                     Start Your Project <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
             </div>
         </section>
 
-        <footer class="bg-apple-900 text-white py-8">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="flex items-center justify-center gap-2 mb-4"><i data-lucide="trees" class="w-6 h-6 text-blue-400"></i><span class="font-display text-xl font-semibold">xScapes</span></div>
-                <p class="text-apple-400 text-sm">NoVA's #1 Modern Landscape Architecture</p>
+        <footer class="bg-earth-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <i data-lucide="trees" class="w-8 h-8 text-sage-500"></i>
+                    <span class="font-display text-2xl font-bold">xScapes</span>
+                </div>
+                <p class="text-stone-400 text-sm">NoVA's #1 Modern Landscape Architecture, Patio & Deck Builder</p>
             </div>
         </footer>
         <script> lucide.createIcons(); </script>
